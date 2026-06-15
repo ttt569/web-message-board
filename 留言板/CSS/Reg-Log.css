@@ -1,0 +1,43 @@
+        body{
+            margin: 0;
+            min-height: 100vh;
+        }
+        .all{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            background-color: rgba(248, 233, 233, 0.5);
+            border-radius: 10px;
+            width: 350px;
+            height: 350px;
+            padding: 24px;
+        }
+        .p1{
+            color: rgb(124, 44, 195);
+            font-size: 20px;
+            align-items: center;
+            text-align: center;
+            margin:5px 0;
+        }
+        
+        button{
+            background-color: rgb(111, 111, 219);
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+            width: 100%;
+        } 
+        button:hover{
+            cursor: pointer;
+        }
+        .error-message {
+            color: rgb(255, 0, 0);
+            font-size: 14px;
+            display: block;
+            text-align: left;
+            padding-left: 2px;
+        }

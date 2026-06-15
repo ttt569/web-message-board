@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Message.css">
+    <title>留言板</title>
+</head>
+<body>
+    <div class="header">
+        <h1>留言板</h1>
+        <div class="login-status" id="loginStatus">
+            <span id="loginText">未登录</span>
+            <button id="loginBtn">登录</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>留下您的评价：</h3>
+        <textarea id="messageInput" name="message" rows="8" cols="50"></textarea>
+        <button type="button" id="submitBtn" class="submit-btn">提交</button>
+    </div>
+
+    <div class="box">
+        <h2>留言列表</h2>
+        <div id="messageList"></div>
+    </div>
+
+    <template id="message-card-template">
+        <div class="message-card">
+            <div class="message-header">
+                <div>
+                    <strong class="message-username"></strong>
+                    <span class="message-time"></span>
+                </div>
+            </div>
+            <div class="message-content"></div>
+            <div class="message-actions">
+                <button class="like-btn" data-action="like">
+                    <span class="heart"></span>
+                    <span class="like-count"></span>
+                </button>
+                <button class="comment-toggle-btn" data-action="toggle-comment"></button>
+            </div>
+            <div class="comment-section">
+                <div class="comment-list"></div>
+                <div class="comment-input-area">
+                    <input type="text" placeholder="写评论..." data-action="comment-keydown">
+                    <button class="comment-submit-btn" data-action="add-comment">发送</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="comment-item-template">
+        <div class="comment-item-wrapper">
+            <div class="comment-item">
+                <span class="comment-user"></span>
+                <span class="comment-text"></span>
+                <span class="comment-time"></span>
+            </div>
+        </div>
+    </template>
+
+    <script src="../JS/Message.js"></script>
+</body>
+</html>

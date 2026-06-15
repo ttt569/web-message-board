@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../CSS/Reg-Log.css" type="text/css">
+</head>
+<body>
+    <div class="all">
+        <div class="box">
+            <div class="p1">
+                <div>注册</div><br>
+                <form id="registerForm">
+                    <label for="phone">手机号:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                    <span class="error-message" id="phoneError"></span><br>
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username"><br>
+                    <span class="error-message" id="usernameError"></span><br>
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" name="password"><br>
+                    <span class="error-message" id="passwordError"></span><br>
+                    <button type="submit">注册</button>
+                    <a href="../Html/Login.html">登录账号</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/Register.js"></script>
+</body>
+</html>
